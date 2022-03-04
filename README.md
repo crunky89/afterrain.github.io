@@ -1,3 +1,7 @@
+<html>
+  <meta http-equiv="refresh" content="0; url=/index"></meta>
+</html>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
