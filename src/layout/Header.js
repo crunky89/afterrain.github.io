@@ -3,11 +3,26 @@ import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Header = () => {
-  return (
-    <header>
-      <div>Header</div>
-    </header>
-  )
+class Header extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      'title' : '만드는 중!',
+    }
+  }
+
+  render() {
+    return (
+      <>
+        <div className="app-header">
+          Header Test
+        </div>
+        <div>{this.state.title}</div>
+      </>
+      
+    )
+  }
 }
-export default Header();
+
+export default Header;

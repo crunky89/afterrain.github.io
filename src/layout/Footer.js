@@ -1,16 +1,16 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-const Footer = () => {
-  return(
-    <footer>
-      <Container>
-        <div style={{textAlign:'center'}}>
-          Footer
+class Footer extends React.Component {
+  render() {
+    return(
+      <>
+        <div className='app-footer'>
+          Footer test
         </div>
-      </Container>
-    </footer>
-  )
+      </>
+    )
+  }
 }
 
 export default Footer;
