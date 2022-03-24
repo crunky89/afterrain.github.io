@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import Footer from "./Footer";
 import Header from './Header';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-class Laytout extends Component {
+class Layout extends Component {
 
   constructor(props) {
     super(props);
@@ -32,7 +33,7 @@ class Laytout extends Component {
   render() {
     return (
       <>
-        <Header/>
+        {/* <Header/> */}
         <div className="app-body">
           Body !!
 
@@ -45,19 +46,16 @@ class Laytout extends Component {
           <div className="pages">
             <Routes>
               <Route exact path="/">
-                <Home/>
-              </Route>
-              <Route path="../TodoBanner">
-
+                abc
               </Route>
             </Routes>
           </div>
         </BrowserRouter>
 
-        <Footer/>
+        {/* <Footer/> */}
       </>
     )
   }
 }
 
-export default Laytout;
+export default Layout;
